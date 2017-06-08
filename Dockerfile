@@ -6,7 +6,6 @@ RUN build_deps="python-dev build-essential" && \
     apt-get install -y wget && \ 
     apt-get install -y unoconv && \ 
     apt-get install -y libreoffice && \ 
-    apt-get install -y imagemagick && \ 
     apt-get purge -y --auto-remove ${build_deps} && \ 
     apt-get autoremove -y
 RUN yes | apt-get install -y ttf-mscorefonts-installer && \ 
